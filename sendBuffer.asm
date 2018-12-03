@@ -27,8 +27,6 @@ sendBufferAsm:
     ldr r2, [r0, #16] ; r2-clraddr
     ldr r3, [r0, #12] ; r3-setaddr
     
-    cpsid i ; disable irq
-    
     b .start
     
 .nextbit:               ;            C0
